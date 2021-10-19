@@ -1,0 +1,10 @@
+<div class="container text-center mt-5">
+  <div>
+    <button class="btn btn-outline-primary" (click)="getImage()">
+      Get a photo
+    </button>
+  </div>
+  <div class="w-75 m-auto" *ngIf="imgSrc">
+    <img [src]="imgSrc" class="mt-4 w-100" alt="fetched image" />
+  </div>
+</div>
